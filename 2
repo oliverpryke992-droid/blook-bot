@@ -1,0 +1,13 @@
+import pyautogui
+import time
+
+print("Move your mouse to where you want to click.")
+print("Starting in 5 seconds...")
+time.sleep(5)
+
+try:
+    while True:
+        pyautogui.click()
+        time.sleep(0.1)  # 10 clicks per second
+except KeyboardInterrupt:
+    print("\nAuto-clicker stopped.")
